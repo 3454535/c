@@ -16,7 +16,7 @@ namespace robot {
         //  moves robot randomly on the grid
         led.enable(true)
         
-        for ( robot_x = 0; robot_x < 4; robot_x++) {
+        for ( robot_x ; robot_x < 5; robot_x++) {
             led.plot(robot_x,robot_y)
         }
      
