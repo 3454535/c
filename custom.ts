@@ -26,10 +26,15 @@ namespace robot {
         //  moves robot in a straght line on the grid
         led.enable(true)
 
-        for (robot_x; robot_x < 5; robot_x=-1) {
+        for (robot_x; robot_x = -1; robot_x=-1) {
             led.plot(robot_x, robot_y)
         }
 
     }
-}
 
+   export function home(x:number,y:number):void{
+        basic.clearScreen()
+        led.plot(2 , 2)
+   }
+    
+}
