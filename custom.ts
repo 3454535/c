@@ -31,10 +31,10 @@ namespace robot {
         }
 
     }
-
+    //%block x.min=0 x.max=4 y.min=0 y.max=4
    export function home(x:number,y:number):void{
         basic.clearScreen()
-        led.plot(2 , 2)
+        led.plot(x , y)
    }
     
 }
