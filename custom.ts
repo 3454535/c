@@ -12,18 +12,13 @@
 //% weight=100 color=#0fbc11 icon=""
 namespace robot {
     //% block robot_x.min=0 robot_x.max=4 robot_y.min=0 robot_y.max=4 robot_speed.min=1 robot_speed.max=4
-    export function move(robot_x: number,robot_y: number,robot_speed:number):void {
+    export function move(robot_x: number,robot_y: number):void {
+        //  moves robot
         led.enable(true)
-        while (robot_x<4) {
-            led.plot(robot_x,robot_y)
-            if(robot_x=4){
-                break
-                return led.plot(robot_x,robot_y)
-                } 
-                else{
-                    robot_speed+=1
-                    robot_x+=robot_speed
-                }
-            }
-    }
+        led.plot(robot_x,robot_y)
+        robot_x=+1
+        led.plot(robot_x,robot_y)
+        
+     }
 }
+
