@@ -22,7 +22,7 @@ namespace robot {
                 } 
                 else{
                     robot_speed+=1
-                    robot_x=robot_speed
+                    robot_x+=robot_speed
                 }
             }
     }
