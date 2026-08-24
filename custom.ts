@@ -13,7 +13,7 @@
 namespace robot {
     //% block robot_x.min=0 robot_x.max=4 robot_y.min=0 robot_y.max=4 robot_speed.min=1 robot_speed.max=4
     export function move(robot_x: number,robot_y: number):void {
-        //  moves robot
+        //  moves robot randomly on the grid
         led.enable(true)
         led.plot(robot_x,robot_y)
         robot_x=+1
