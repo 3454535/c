@@ -30,11 +30,13 @@ namespace robot {
             led.plot(robot_x, robot_y)
         }
 
-    }
+     }
 
-   export function home(x:number,y:number):void{
+    
+    
+     //% block x.min=0 x.max=4 y.min=0 y.max=4
+     export function home(x:number,y:number):void{
         basic.clearScreen()
         led.plot(2 , 2)
-   }
-    
+     }
 }
