@@ -18,6 +18,7 @@ namespace robot {
             led.plot(robot_x,robot_y)
             if(robot_x=4){
                 break
+                return led.plot(robot_x,robot_y)
                 } 
                 else{
                     robot_speed+=1
