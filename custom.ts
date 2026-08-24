@@ -15,10 +15,12 @@ namespace robot {
     export function move(robot_x: number,robot_y: number):void {
         //  moves robot randomly on the grid
         led.enable(true)
-        led.plot(robot_x,robot_y)
-        robot_x=+1
-        led.plot(robot_x,robot_y)
         
+        for ( robot_x = 0; robot_x < 4; robot_x++) {
+            led.plot(robot_x,robot_y)
+        }
+     
      }
+
 }
 
