@@ -16,7 +16,13 @@ namespace robot {
         led.enable(true)
         while (robot_x<4) {
             led.plot(robot_x,robot_y)
-            robot_x=+1
+            if(robot_x=4){
+                break
+                } 
+                else{
+                    robot_speed+=1
+                    robot_x=robot_speed
+                }
             }
     }
 }
