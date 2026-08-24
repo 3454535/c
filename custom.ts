@@ -14,7 +14,7 @@ namespace robot {
     //% block
     export function Trace(robot_x: number,robot_y: number,robot_move:number):void {
         while(robot_x<4); {
-        led.toggle(robot_x, robot_y)
+        led.plot(robot_x, robot_y)
         robot_x+1;
         }
     }
