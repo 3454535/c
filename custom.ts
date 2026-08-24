@@ -31,5 +31,10 @@ namespace robot {
         }
 
     }
-}
 
+   export function home(x:number,y:number):void{
+        basic.clearScreen()
+        led.plot(2 , 2)
+   }
+    
+}
