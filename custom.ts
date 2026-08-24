@@ -23,7 +23,7 @@ namespace robot {
      }
     //% block robot_x.min=0 robot_x.max=4 robot_y.min=0 robot_y.max=4 robot_speed.min=1 robot_speed.max=4
     export function move_back(robot_x: number, robot_y: number): void {
-        //  moves robot in a straght line on the grid
+        //  moves robot back in a straght line on the grid
         led.enable(true)
 
         for (robot_x; robot_x = -1; robot_x=-1) {
