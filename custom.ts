@@ -15,7 +15,8 @@ namespace robot {
     export function move_forward(robot_x: number,robot_y: number):void {
         //  moves robot in a straght line on the grid
         led.enable(true)
-        
+        basic.clearScreen()
+
         for ( robot_x ; robot_x < 5; robot_x++) {
             led.plot(robot_x,robot_y)
         }
@@ -25,7 +26,7 @@ namespace robot {
     export function move_back(robot_x: number, robot_y: number): void {
         //  moves robot in a straght line on the grid
         led.enable(true)
-
+        
         for (robot_x; robot_x = -1; robot_x=-1) {
             led.plot(robot_x, robot_y)
         }
